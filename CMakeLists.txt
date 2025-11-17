@@ -1,13 +1,3 @@
-########## VCPKG ROOT ##########
-if(DEFINED ENV{VCPKG_ROOT})
-    set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
-            CACHE STRING "Vcpkg toolchain file")
-    #SET THE VCPKG INSTALL PATH
-    set(CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/installed/x64-windows")
-else()
-    message(WARNING "VCPKG_ROOT environment variable not set. Please set it to your vcpkg installation directory.")
-endif()
-
 ########## PROJECT SETTINGS ##########
 cmake_minimum_required(VERSION 3.30)
 #CREATE PROJECT

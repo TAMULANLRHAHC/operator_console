@@ -23,28 +23,20 @@ CrowSocket::CrowSocket(crow::SimpleApp& app) {
     // Init websocket endpoint
     CROW_WEBSOCKET_ROUTE(app, "/ws")
     .onopen([this](crow::websocket::connection& conn) {
-        //lock mutex
         std::lock_guard<std::mutex> guard(crow_websocket_clients_mutex);
-        //add to connections with data map
         crow_websocket_clients[&conn] = {};
     })
-    .onclose([this](crow::websocket::connection& conn, const std::string& reason,  uint16_t code) {
-        {
-            //lock mutex
-            std::lock_guard<std::mutex> guard(crow_websocket_clients_mutex);
-
-            //find client in map and erase
-            for (auto it = crow_websocket_clients.begin(); it != crow_websocket_clients.end(); ) {
-                if (it->first == &conn) {
-                    it = crow_websocket_clients.erase(it);
-                } else {
-                    ++it;
-                }
+    .onclose([this](crow::websocket::connection& conn, const std::string& reason) {
+        std::lock_guard<std::mutex> guard(crow_websocket_clients_mutex);
+        for (auto it = crow_websocket_clients.begin(); it != crow_websocket_clients.end(); ) {
+            if (it->first == &conn) {
+                it = crow_websocket_clients.erase(it);
+            } else {
+                ++it;
             }
         }
-
     })
-    .onmessage([this](crow::websocket::connection& conn, const std::string& data, uint16_t code) {
+    .onmessage([this](crow::websocket::connection& conn, const std::string& data, bool is_binary) {
         process_event(conn, data);
     });
 }

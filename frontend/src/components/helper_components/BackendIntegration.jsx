@@ -66,3 +66,8 @@ export function TagStreamerProvider({ children }) {
         </TagStreamer.Provider>
     )
 }
+
+export function updateTag(tag_path, desired_value) {
+    let data = {"tag_path": tag_path, "desired_value": desired_value}
+    socket.emit("update_tag", data);
+}

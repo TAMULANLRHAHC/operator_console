@@ -4,6 +4,7 @@ import {Routes, Route} from "react-router-dom";
 import {DatabaseSearch} from "@/components/main_app/DatabaseSearch.jsx";
 import {DeviceConnections} from "@/components/main_app/DeviceConnections.jsx";
 import {Database, Unplug, Hand, Joystick} from "lucide-react";
+import {HandMainDisplay} from "@/components/main_app/HandMainDisplay.jsx";
 
 const sidebarContent = [
     {
@@ -27,27 +28,28 @@ const sidebarContent = [
         label: "Connections",
         items: [
             {
-                title: "Hand 1",
-                url: "#",
+                title: "Hand",
+                url: "Connections/Hand",
                 icon: <Hand />,
-                subItems: [
-                    {
-                        title: "Hydraulics",
-                        url: "#all",
-                    },
-                    {
-                        title: "Angles",
-                        url: "#unread",
-                    },
-                ],
+                component: <HandMainDisplay/>,
+                // subItems: [
+                //     {
+                //         title: "Hydraulics",
+                //         url: "#all",
+                //     },
+                //     {
+                //         title: "Angles",
+                //         url: "#unread",
+                //     },
+                // ],
             },
-            {
-                title: "Hand 1 Controller",
-                url: "#",
-                icon: <Joystick />,
-                subItems: [
-                ],
-            },
+            // {
+            //     title: "Hand 1 Controller",
+            //     url: "#",
+            //     icon: <Joystick />,
+            //     subItems: [
+            //     ],
+            // },
         ],
     },
 ]

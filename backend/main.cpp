@@ -12,30 +12,36 @@ int main() {
     HAOSInstance instance(local_address, 5000);
 
     /// TCP Client for remote Arduino ///
-    TCPClient arduino("192.168.1.116", 6000);
+    static TCPClient arduino("192.168.1.116", 6000);
 
     /// CONTROL LOOP ///
     HAOS_ON_LOOP(instance, "DACS_LOOP", [&](ThreadedLoop& loop) {
 
-        // 1. Try to connect if not connected
+        /// CONNECT TO HAND TCP SERVER ///
         if (!arduino.isConnected()) {
             std::cout << "[TCP] Not connected, trying to connect...\n";
-            if (arduino.connectBlocking()) {
-                std::cout << "[TCP] Connected!\n";
-            } else {
-                std::cout << "[TCP] Connect failed\n";
-            }
-            return;
+            arduino.connect();
         }
 
-        // 2. Receive packet (blocking)
-        std::string packet;
-        if (arduino.receiveLine(packet)) {
-            std::cout << "[RX] " << packet << "\n";
-        }
+        /// SEND DESIRED STATE TO HAND ///
+        nlohmann::json out;
 
-        // 3. Send packet
-        arduino.sendLine("LED_ON");
+        double led_state_desired = queryTag<double>("HAOS:hand/led.desired_state.value", 0.0);
+        out["led_state"] = led_state_desired;
+
+        arduino.sendJSON(out);
+
+        /// RECIEVE ACTUAL STATE FROM HAND ///
+        nlohmann::json j;
+        if (arduino.readJSON(j)) {
+
+            double led_actual_state = j.value("led_state", 0.0);
+            upsertTag("HAOS:hand/led.actual_state.value", led_actual_state);
+
+            double A0_voltage = j.value("A0_voltage", 0.0);
+            upsertTag("HAOS:hand/A0_voltage.value", A0_voltage);
+
+        }
 
     });
 

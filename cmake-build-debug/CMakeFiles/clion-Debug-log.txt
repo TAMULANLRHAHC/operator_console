@@ -1,7 +1,7 @@
-"C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=C:\Users\kempt\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G "NMake Makefiles" -S C:\Users\kempt\OneDrive\Documents\Github\Repositories\operator_console -B C:\Users\kempt\OneDrive\Documents\Github\Repositories\operator_console\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2024.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3/bin/ninja/win/x64/ninja.exe" -DCMAKE_TOOLCHAIN_FILE=E:/Code/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S C:\Users\saint\Documents\Code\Github\operator_console -B C:\Users\saint\Documents\Code\Github\operator_console\cmake-build-debug
 -- Running vcpkg install
 Detecting compiler hash for triplet x64-windows...
-Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe
 The following packages are already installed:
   * asio:x64-windows@1.32.0
     crow:x64-windows@1.2.0
@@ -27,22 +27,22 @@ For more information, see the docs here:
     
     https://json.nlohmann.me/api/macros/json_use_implicit_conversions/
 
-All requested installations completed successfully in: 2.89 ms
+All requested installations completed successfully in: 1.44 ms
 -- Running vcpkg install - done
--- The C compiler identification is MSVC 19.35.32215.0
--- The CXX compiler identification is MSVC 19.35.32215.0
+-- The C compiler identification is MSVC 19.42.34435.0
+-- The CXX compiler identification is MSVC 19.42.34435.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe - skipped
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe - skipped
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Found asio: C:/Users/kempt/OneDrive/Documents/Github/Repositories/operator_console/cmake-build-debug/vcpkg_installed/x64-windows/include
--- Found nlohmann_json: C:/Users/kempt/OneDrive/Documents/Github/Repositories/operator_console/cmake-build-debug/vcpkg_installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.12.0")
--- Configuring done (10.9s)
--- Generating done (0.1s)
--- Build files have been written to: C:/Users/kempt/OneDrive/Documents/Github/Repositories/operator_console/cmake-build-debug
+-- Found asio: C:/Users/saint/Documents/Code/Github/operator_console/cmake-build-debug/vcpkg_installed/x64-windows/include
+-- Found nlohmann_json: C:/Users/saint/Documents/Code/Github/operator_console/cmake-build-debug/vcpkg_installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.12.0")
+-- Configuring done (11.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/saint/Documents/Code/Github/operator_console/cmake-build-debug

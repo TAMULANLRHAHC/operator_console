@@ -1,5 +1,5 @@
 Detecting compiler hash for triplet x64-windows...
-Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe
+Compiler found: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe
 The following packages are already installed:
   * asio:x64-windows@1.32.0
     crow:x64-windows@1.2.0
@@ -25,4 +25,4 @@ For more information, see the docs here:
     
     https://json.nlohmann.me/api/macros/json_use_implicit_conversions/
 
-All requested installations completed successfully in: 2.89 ms
+All requested installations completed successfully in: 1.44 ms

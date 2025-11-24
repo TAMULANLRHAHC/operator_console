@@ -149,6 +149,26 @@ build CMakeFiles\hydraulic_arm_operation_software.dir\backend\main.cpp.obj: CXX_
   TARGET_PDB = hydraulic_arm_operation_software.pdb
   dyndep = CMakeFiles/hydraulic_arm_operation_software.dir/CXX.dd
 
+build CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj.ddi: CXX_SCAN__hydraulic_arm_operation_software_Debug C$:\Users\saint\Documents\Code\Github\operator_console\backend\tcp.cpp || cmake_object_order_depends_target_hydraulic_arm_operation_software
+  DEFINES = -DASIO_STANDALONE -D_WIN32_WINNT=0x0A00
+  DEP_FILE = CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /bigobj
+  INCLUDES = -IC:\Users\saint\Documents\Code\Github\operator_console\backend -external:IC:\Users\saint\Documents\Code\Github\operator_console\cmake-build-debug\vcpkg_installed\x64-windows\include -external:W0
+  OBJ_FILE = CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj.ddi.i
+
+build CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj: CXX_COMPILER__hydraulic_arm_operation_software_scanned_Debug C$:\Users\saint\Documents\Code\Github\operator_console\backend\tcp.cpp | CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj.modmap || cmake_object_order_depends_target_hydraulic_arm_operation_software CMakeFiles\hydraulic_arm_operation_software.dir\CXX.dd
+  DEFINES = -DASIO_STANDALONE -D_WIN32_WINNT=0x0A00
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi /bigobj
+  INCLUDES = -IC:\Users\saint\Documents\Code\Github\operator_console\backend -external:IC:\Users\saint\Documents\Code\Github\operator_console\cmake-build-debug\vcpkg_installed\x64-windows\include -external:W0
+  OBJECT_DIR = CMakeFiles\hydraulic_arm_operation_software.dir
+  OBJECT_FILE_DIR = CMakeFiles\hydraulic_arm_operation_software.dir\backend
+  TARGET_COMPILE_PDB = CMakeFiles\hydraulic_arm_operation_software.dir\
+  TARGET_PDB = hydraulic_arm_operation_software.pdb
+  dyndep = CMakeFiles/hydraulic_arm_operation_software.dir/CXX.dd
+
 build CMakeFiles\hydraulic_arm_operation_software.dir\backend\threading.cpp.obj.ddi: CXX_SCAN__hydraulic_arm_operation_software_Debug C$:\Users\saint\Documents\Code\Github\operator_console\backend\threading.cpp || cmake_object_order_depends_target_hydraulic_arm_operation_software
   DEFINES = -DASIO_STANDALONE -D_WIN32_WINNT=0x0A00
   DEP_FILE = CMakeFiles\hydraulic_arm_operation_software.dir\backend\threading.cpp.obj.ddi.d
@@ -209,7 +229,7 @@ build CMakeFiles\hydraulic_arm_operation_software.dir\backend\websockets.cpp.obj
   TARGET_PDB = hydraulic_arm_operation_software.pdb
   dyndep = CMakeFiles/hydraulic_arm_operation_software.dir/CXX.dd
 
-build CMakeFiles\hydraulic_arm_operation_software.dir\CXX.dd | C$:\Users\saint\Documents\Code\Github\operator_console\cmake-build-debug\CMakeFiles\hydraulic_arm_operation_software.dir\CXXModules.json CMakeFiles\hydraulic_arm_operation_software.dir\backend\clientupdates.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\haos.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\helperfunctions.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\inmemorydatabase.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\main.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\threading.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\webserver.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\websockets.cpp.obj.modmap: CXX_DYNDEP__hydraulic_arm_operation_software_Debug CMakeFiles\hydraulic_arm_operation_software.dir\backend\clientupdates.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\haos.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\helperfunctions.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\inmemorydatabase.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\main.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\threading.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\webserver.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\websockets.cpp.obj.ddi | C$:\Users\saint\Documents\Code\Github\operator_console\cmake-build-debug\CMakeFiles\hydraulic_arm_operation_software.dir\CXXDependInfo.json
+build CMakeFiles\hydraulic_arm_operation_software.dir\CXX.dd | C$:\Users\saint\Documents\Code\Github\operator_console\cmake-build-debug\CMakeFiles\hydraulic_arm_operation_software.dir\CXXModules.json CMakeFiles\hydraulic_arm_operation_software.dir\backend\clientupdates.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\haos.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\helperfunctions.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\inmemorydatabase.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\main.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\threading.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\webserver.cpp.obj.modmap CMakeFiles\hydraulic_arm_operation_software.dir\backend\websockets.cpp.obj.modmap: CXX_DYNDEP__hydraulic_arm_operation_software_Debug CMakeFiles\hydraulic_arm_operation_software.dir\backend\clientupdates.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\haos.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\helperfunctions.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\inmemorydatabase.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\main.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\threading.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\webserver.cpp.obj.ddi CMakeFiles\hydraulic_arm_operation_software.dir\backend\websockets.cpp.obj.ddi | C$:\Users\saint\Documents\Code\Github\operator_console\cmake-build-debug\CMakeFiles\hydraulic_arm_operation_software.dir\CXXDependInfo.json
 
 
 # =============================================================================
@@ -219,7 +239,7 @@ build CMakeFiles\hydraulic_arm_operation_software.dir\CXX.dd | C$:\Users\saint\D
 #############################################
 # Link the executable hydraulic_arm_operation_software.exe
 
-build hydraulic_arm_operation_software.exe: CXX_EXECUTABLE_LINKER__hydraulic_arm_operation_software_Debug CMakeFiles\hydraulic_arm_operation_software.dir\backend\clientupdates.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\haos.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\helperfunctions.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\inmemorydatabase.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\main.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\threading.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\webserver.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\websockets.cpp.obj
+build hydraulic_arm_operation_software.exe: CXX_EXECUTABLE_LINKER__hydraulic_arm_operation_software_Debug CMakeFiles\hydraulic_arm_operation_software.dir\backend\clientupdates.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\haos.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\helperfunctions.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\inmemorydatabase.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\main.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\tcp.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\threading.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\webserver.cpp.obj CMakeFiles\hydraulic_arm_operation_software.dir\backend\websockets.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = ws2_32.lib  wsock32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

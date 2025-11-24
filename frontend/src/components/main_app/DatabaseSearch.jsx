@@ -126,7 +126,7 @@ export function DatabaseSearch() {
                         //add it
                         cells.push(
                             <TableCell>
-                                <div className="h-full w-full flex items-center">
+                                <div className="h-full w-full flex items-center normal-case">
                                     <Label id={query+"_0"} >{front}</Label>
                                     <Label id={query+"_query"} className="bg-yellow-300/40 rounded">{middle}</Label>
                                     <Label id={query+"_1"}>{end}</Label>
